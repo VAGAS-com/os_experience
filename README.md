@@ -1,6 +1,6 @@
 # OsExperiment
 
-This project is based on the [EsExperiment](https://github.com/VAGAScom/es_experiment/blob/master/README.md).
+This project is based on the [EsExperiment](https://github.com/VAGAScom/os_experiment/blob/master/README.md).
 
 Easy way to create and modify documents on the fly before indexing in OpenSearch.
 
