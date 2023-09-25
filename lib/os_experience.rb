@@ -4,14 +4,14 @@ require 'opensearch-ruby'
 require 'singleton'
 require 'oj'
 
-require 'os_experiment/version'
-require 'os_experiment/actions'
-require 'os_experiment/config'
-require 'os_experiment/documents'
-require 'os_experiment/client'
+require 'os_experience/version'
+require 'os_experience/actions'
+require 'os_experience/config'
+require 'os_experience/documents'
+require 'os_experience/client'
 
-module OsExperiment
-  extend OsExperiment::Actions
+module OsExperience
+  extend OsExperience::Actions
 
   class << self
     def reset_index
@@ -20,7 +20,7 @@ module OsExperiment
     end
 
     def configure
-      yield OsExperiment::Config.instance
+      yield OsExperience::Config.instance
     end
   end
 

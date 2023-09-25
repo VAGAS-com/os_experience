@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module OsExperiment::Actions
+module OsExperience::Actions
   module Create
     def create(name, options = {})
       client.index params(name, options)

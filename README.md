@@ -1,6 +1,6 @@
-# OsExperiment
+# OsExperience
 
-This project is based on the [EsExperiment](https://github.com/VAGAScom/os_experiment/blob/master/README.md).
+This project is based on the [EsExperiment](https://github.com/VAGAScom/os_experience/blob/master/README.md).
 
 Easy way to create and modify documents on the fly before indexing in OpenSearch.
 
@@ -9,7 +9,7 @@ Easy way to create and modify documents on the fly before indexing in OpenSearch
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'os_experiment'
+gem 'os_experience'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install os_experiment
+    $ gem install os_experience
 
 ## Usage
 
@@ -27,7 +27,7 @@ Or install it yourself as:
 On your spec_helper or rails_helper file include the code below with the configuration for your application.
 
 ```ruby
-OsExperiment.configure do |config|
+OsExperience.configure do |config|
   config.connection_tries = 3
   config.time_between_connection_tries = 3
   config.documents_path = 'spec/fixtures/factories/'
@@ -51,11 +51,11 @@ For example, if you have a json file named `user.json` in the directory `spec/fi
 ```
 You can index this doc like this:
 ```Ruby
-OsExperiment.create(:user)
+OsExperience.create(:user)
 ```
 Also, it's possible to change values before indexing the doc:
 ```Ruby
-OsExperiment.create(:user, fields: { user_id: 123, 'address.street': 'Portland St.'})
+OsExperience.create(:user, fields: { user_id: 123, 'address.street': 'Portland St.'})
 ```
 
 #### Document with children docs
@@ -75,7 +75,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/VAGAScom/os_experiment. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/VAGAScom/os_experience. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 

@@ -2,7 +2,7 @@
 
 require 'opensearch-ruby'
 
-class OsExperiment::Client
+class OsExperience::Client
   include Singleton
 
   def connection(config, tries = 0)
@@ -12,7 +12,7 @@ class OsExperiment::Client
     conn.cluster.health
     @conn = conn
   rescue Faraday::ConnectionFailed
-    raise OsExperiment::ConexaoError if config.connection_tries == tries
+    raise OsExperience::ConexaoError if config.connection_tries == tries
 
     sleep config.time_between_connection_tries
 

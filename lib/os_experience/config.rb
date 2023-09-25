@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class OsExperiment::Config
+class OsExperience::Config
   include Singleton
   attr_accessor :connection_tries,
                 :documents_path,

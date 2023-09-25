@@ -2,7 +2,7 @@
 
 require 'byebug'
 
-module OsExperiment::Actions
+module OsExperience::Actions
   module CreateIndex
     def create_index
       client.indices.create index: config.index, body: config.schema

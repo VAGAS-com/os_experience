@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class OsExperiment::Documents
+class OsExperience::Documents
   include Singleton
 
   def get(key)

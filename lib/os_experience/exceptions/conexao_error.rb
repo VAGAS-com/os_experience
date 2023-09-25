@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class OsExperiment::ConexaoError < StandardError
+class OsExperience::ConexaoError < StandardError
   def initialize(msg = 'Conexão com ES falhou')
     super msg
   end

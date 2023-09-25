@@ -2,11 +2,11 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'os_experiment/version'
+require 'os_experience/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'os_experiment'
-  spec.version       = OsExperiment::VERSION
+  spec.name          = 'os_experience'
+  spec.version       = OsExperience::VERSION
   spec.authors       = ['Caio Penhalver']
   spec.email         = ['caio.penhalver@vagas.com.br']
 

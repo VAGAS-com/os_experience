@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module OsExperiment::Actions
+module OsExperience::Actions
   module CreateList
     def create_list(name)
       docs = documents.get(name)
